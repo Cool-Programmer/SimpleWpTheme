@@ -13,3 +13,15 @@
 			<span><?php bloginfo('description'); ?></span>
 		</div>
 	</header>
+
+	<nav class="main-nav">
+		<div class="container">
+			<?php 
+				// Show the menu
+				$args = [
+					"theme_loction" => "Primary"
+				];
+				wp_nav_menu($args);
+			?>
+		</div>
+	</nav>
